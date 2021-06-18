@@ -32,6 +32,7 @@ gem 'simple_form', '~> 5.1'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'devise', '~> 4.7', '>= 4.7.3' 
 gem "image_processing", "~> 1.0"
+gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 
 
 

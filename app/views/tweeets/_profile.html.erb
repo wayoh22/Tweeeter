@@ -1,18 +1,18 @@
 <div class="column is-one-quarter">
 	<nav class="panel">
-		<p class="panel-heading">Profile</p>
+		<p class="panel-heading has-text-white has-text-centered">Profile</p>
 		<div class="panel-block">
 			<article class="media">
 				<div class="media-left">
 					<figure class="image is-64x64">
-						<%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.name) %>
+						<%= image_tag(current_user.avatar) if current_user.avatar.attached? %>
 					</figure>
 				</div>
 				<div class="media-content">
 					<div class="content">
 						<p>
-							<strong><%= current_user.name %></strong><br />
-							<small><%= current_user.username %></small>
+							<strong><%= current_user.name %></strong><br/>
+							<small>@<%= current_user.username %></small>
 						</p>
 					</div>
 				</div>
